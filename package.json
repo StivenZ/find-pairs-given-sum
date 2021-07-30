@@ -1,0 +1,18 @@
+{
+  "name": "pairsums",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --verbose ./test/tests.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
