@@ -30,7 +30,7 @@ function findPairs2(n, array) {
 
   while (i < j) {
     if (parseInt(array[i].h_in) + parseInt(array[j].h_in) === n) {
-      pairs.push(array[i], array[j]);
+      pairs.push([array[i], array[j]]);
       checkRedundant(i, j, array);
     }
     if (parseInt(array[i].h_in) + parseInt(array[j].h_in) > n) {

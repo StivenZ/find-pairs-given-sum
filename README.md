@@ -11,7 +11,7 @@ findPairs is a JavaScript repo for finding pairs of values which sum up to a giv
 Clone this repository
 
 ```bash
-git clon
+git clone https://github.com/StivenZ/find-pairs-given-sum.git
 ```
 
 Use the package manager [npm](https://docs.npmjs.com/cli/v7/commands/npm-install) to install findPairs.
@@ -33,7 +33,7 @@ where _number_ is the sum parameter passed to the function to match the data. Th
 - _option_ = 2
   Checks O(nlog(n)) time complexity.
 
-```JavaScript
+```bash
 # Checks O(n)
 ./src/index.js 139
 

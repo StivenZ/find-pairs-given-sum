@@ -27,11 +27,11 @@ let data = [
 
 let pairsArray = [];
 if (!code) {
-  pairsArray = findPairs(sum, data);
-} else if (code === 1) {
-  pairsArray = findPairs2(sum, data);
-} else if (code === 2) {
   pairsArray = findPairs3(sum, data);
+} else if (code === 1) {
+  pairsArray = findPairs(sum, data);
+} else if (code === 2) {
+  pairsArray = findPairs2(sum, data);
 }
 
 printformat(pairsArray);
