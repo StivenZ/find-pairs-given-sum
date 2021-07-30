@@ -22,8 +22,8 @@ npm install
 
 ## Usage
 
-```javascript
-./src/index.js number option
+```bash
+npm start number [option]
 ```
 
 where _number_ is the sum parameter passed to the function to match the data. There is an optional parameter _option_ to choose the algorithm:
@@ -35,11 +35,11 @@ where _number_ is the sum parameter passed to the function to match the data. Th
 
 ```bash
 # Checks O(n)
-./src/index.js 139
+npm start 156
 
 # Checks O(n^2)
-./src/index.js 139 1
+npm start 156 1
 
 # Checks O(nlog(n))
-./src/index.js 139 2
+npm start 156 2
 ```
