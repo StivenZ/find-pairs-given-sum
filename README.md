@@ -1,6 +1,6 @@
 # findPairs
 
-findPairs is a JavaScript repo for finding pairs of values which sum up to a given value. It uses three different approaches:
+findPairs is a JavaScript repository for finding pairs of values which sum up to a given value. It uses two different approaches:
 
 - "Brute-force" algorithm with O(n^2) time complexity.
 - Efficient solution using hashing (JavaScript inner Objects) with O(n)
@@ -30,22 +30,22 @@ where _number_ is the sum parameter passed to the function to match the data. Th
 - _option_ = 1
   Checks O(n^2) time complexity.
 - _option_ = _no option passed_
-  Checks by default O(n) time complexity.
+  checks by default O(n) time complexity.
 
 Execute without optional parameters to see the best time algorithm O(n) using inner JavaScript hash.
 
 ```bash
 # Checks O(n)
-npm start 156
+npm start 139
 
 # Checks O(n^2)
-npm start 156 1
+npm start 139 1
 ```
 
 ## Discussion
 
 The algorithm to find the first occurrence of a pair of data which sum adds up to a given number can be solved, in deed, in **O(n)**.
-A new issue arrives when it's strictly necessary to give the output of every occurrence of this combinations.
+A new issue arrives when it's strictly necessary to output every occurrence of this combinations.
 
 1. The best scenario happens when data to combine is heterogeneously distributed and a combination seldom appears. In such case **O(n)** can actually be achieved.
 
