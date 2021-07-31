@@ -33,6 +33,8 @@ where _number_ is the sum parameter passed to the function to match the data. Th
 - _option_ = 2
   Checks O(nlog(n)) time complexity.
 
+Execute without optional parameters to see the best time algorithm O(n) using inner JavaScript hash.
+
 ```bash
 # Checks O(n)
 npm start 156
