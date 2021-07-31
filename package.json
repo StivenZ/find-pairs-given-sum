@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest --verbose ./test/tests.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "start": "node ./src/index.js"
   },
   "author": "",

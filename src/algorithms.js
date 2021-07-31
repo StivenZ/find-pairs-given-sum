@@ -1,6 +1,6 @@
 import { performance } from "perf_hooks";
 
-function findPairs(n, array) {
+function findPairsOn2(n, array) {
   let i, j;
   let pairs = [];
 
@@ -18,33 +18,7 @@ function findPairs(n, array) {
   return pairs;
 }
 
-function findPairs2(n, array) {
-  let i = 0;
-  let j = array.length - 1;
-  let pairs = [];
-
-  const t0 = performance.now();
-  array.sort((a, b) => {
-    return parseInt(a.h_in) - parseInt(b.h_in);
-  });
-
-  while (i < j) {
-    if (parseInt(array[i].h_in) + parseInt(array[j].h_in) === n) {
-      pairs.push([array[i], array[j]]);
-      checkRedundant(i, j, array);
-    }
-    if (parseInt(array[i].h_in) + parseInt(array[j].h_in) > n) {
-      j--;
-    } else {
-      i++;
-    }
-  }
-  const t1 = performance.now();
-  console.log("Performance was:", t1 - t0);
-  return pairs;
-}
-
-function findPairs3(n, array) {
+function findPairsOn(n, array) {
   let pairs = [];
   let dict = {};
 
@@ -55,7 +29,6 @@ function findPairs3(n, array) {
 
     if (dict[diff]) {
       for (let players of dict[diff]) {
-        // if ()
         pairs.push([players, player]);
       }
     }
@@ -69,13 +42,4 @@ function findPairs3(n, array) {
   return pairs;
 }
 
-function checkRedundant(i, j, array) {
-  let k = 1;
-  while (array[i + k].h_in === array[i]) {
-    pairs.push(array[i + k], array[j]);
-    k++;
-  }
-  return;
-}
-
-export { findPairs, findPairs2, findPairs3 };
+export { findPairsOn, findPairsOn2 };
