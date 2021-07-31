@@ -2,9 +2,9 @@
 
 findPairs is a JavaScript repo for finding pairs of values which sum up to a given value. It uses three different approaches:
 
-1. "Brute-force" algorithm with O(n^2) time complexity.
-2. Enhanced "brute-force" by using 2 pointers with O(nlog(n)).
-3. Efficient solution using hashing (JavaScript inner Objects) with O(n)
+- "Brute-force" algorithm with O(n^2) time complexity.
+- Enhanced "brute-force" by using 2 pointers with O(nlog(n)).
+- Efficient solution using hashing (JavaScript inner Objects) with O(n)
 
 ## Installation
 

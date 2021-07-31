@@ -49,26 +49,23 @@ function findPairs3(n, array) {
   let dict = {};
 
   let t0 = performance.now();
-  for (const player of array) {
-    if (!dict[player.h_in]) {
-      dict[player.h_in] = [player];
-    } else {
-      dict[player.h_in] = [...dict[player.h_in], player];
-    }
-  }
 
   for (const player of array) {
     let diff = n - parseInt(player.h_in);
+
     if (dict[diff]) {
       for (let players of dict[diff]) {
+        // if ()
         pairs.push([players, player]);
       }
     }
+
+    if (!dict[player.h_in]) dict[player.h_in] = [];
+    dict[player.h_in].push(player);
   }
   let t1 = performance.now();
 
   console.log("The performance was:", t1 - t0);
-  let pairSet = new Set(pairs);
   return pairs;
 }
 
